@@ -54,3 +54,4 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+    <h1>TERE KOOL!</h1>
