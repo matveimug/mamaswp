@@ -1,0 +1,32 @@
+{
+  "name": "mamaswp",
+  "version": "1.0.0",
+  "description": "mama's packages",
+  "main": "index.php",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm": "^5.5.1",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-task:scss-compile": "node-sass-chokidar --source-map true wp-content/themes/mamas-heaven-wp-theme/sass/style.scss -o wp-content/themes/mamas-heaven-wp-theme",
+    "build-task:autoprefixer": "postcss wp-content/themes/visit-saaremaa/*.css --use autoprefixer -d wp-content/mamas-heaven-wp-theme",
+    "build": "npm-run-all -p build-task:*",
+    "watch": "node-sass-chokidar --source-map true wp-content/themes/visit-saaremaa/sass -o wp-content/themes/mamas-heaven-wp-theme --watch",
+    "dev": "npm-run-all -p sass:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matveimug/mamaswp.git"
+  },
+  "author": "madis vaher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matveimug/mamaswp/issues"
+  },
+  "homepage": "https://github.com/matveimug/mamaswp#readme"
+}
