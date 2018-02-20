@@ -15,5 +15,32 @@
 get_header(); ?>
 
 <?php
+$args = array(
+	'post_type' => 'page',
+	'p' => 16
+);
+
+$your_query = new WP_Query( $args );
+while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1><?php
+	the_content();
+endwhile;
+?>
+
+<?php
+$args = array(
+	'post_type' => 'page',
+	'p' => 22
+);
+
+$your_query = new WP_Query( $args );
+while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1><?php
+	the_content();
+endwhile;
+?>
+<?php
+
+
 get_sidebar();
 get_footer();
