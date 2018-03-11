@@ -26,11 +26,53 @@ while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
 	the_content();
 endwhile;
 ?>
-
 <?php
+
 $args = array(
 	'post_type' => 'page',
 	'p' => 22
+);
+
+$your_query = new WP_Query( $args );
+while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1><?php
+	the_content();
+endwhile;
+?>
+<?php
+
+
+$args = array(
+	'post_type' => 'page',
+	'p' => 50
+);
+
+$your_query = new WP_Query( $args );
+while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1><?php
+	the_content();
+endwhile;
+?>
+<?php
+
+
+$args = array(
+	'post_type' => 'page',
+	'p' => 53
+);
+
+$your_query = new WP_Query( $args );
+while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1><?php
+	the_content();
+endwhile;
+?>
+<?php
+
+
+$args = array(
+	'post_type' => 'page',
+	'p' => 56
 );
 
 $your_query = new WP_Query( $args );
