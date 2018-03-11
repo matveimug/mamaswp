@@ -1,0 +1,13 @@
+.fp {
+  &-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-inner {
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}

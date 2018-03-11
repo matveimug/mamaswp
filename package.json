@@ -16,7 +16,7 @@
     "build-task:scss-compile": "node-sass-chokidar --source-map true wp-content/themes/mamas-heaven-wp-theme/sass/style.scss -o wp-content/themes/mamas-heaven-wp-theme",
     "build-task:autoprefixer": "postcss wp-content/themes/visit-saaremaa/*.css --use autoprefixer -d wp-content/mamas-heaven-wp-theme",
     "build": "npm-run-all -p build-task:*",
-    "watch": "node-sass-chokidar --source-map true wp-content/themes/visit-saaremaa/sass -o wp-content/themes/mamas-heaven-wp-theme --watch",
+    "watch": "node-sass-chokidar --source-map true wp-content/themes/mamas-heaven-wp-theme/sass -o wp-content/themes/mamas-heaven-wp-theme --watch",
     "dev": "npm-run-all -p sass:*"
   },
   "repository": {
