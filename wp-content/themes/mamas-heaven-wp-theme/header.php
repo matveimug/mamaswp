@@ -24,14 +24,15 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mamas-heaven-wp-theme' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header" style="background-image: url('<?php echo( get_header_image() ); ?>')">
 		<div class="site-branding">
+
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
 			endif;
 

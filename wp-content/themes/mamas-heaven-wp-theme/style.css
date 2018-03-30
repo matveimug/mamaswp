@@ -712,6 +712,13 @@ object {
   margin: 0 auto;
   padding: 2rem; }
 
+.site-header {
+  width: 100%;
+  height: 100vh; }
+
+.custom-logo-link {
+  max-width: 120px; }
+
 .text-left {
   text-align: left; }
 
